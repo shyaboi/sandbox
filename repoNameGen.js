@@ -1,12 +1,12 @@
-repoNamePrefixArr = ['Rad', 'Dope', 'Gnarly','Sweet','Electric','Ledgendary','Hott','Cool','Nifty','Spiffy','Tubular']
-repoNameSuffixArr = ['Radness', 'Dopeness', 'Gnar','Sweetness','Electric','Ledgend','Hottness','Coolness','Niftyness','Spiffyness']
+repoNamePrefixArr = ['Rad', 'Dope', 'Gnarly','Sweet','Electric','Ledgendary','Hott','Cool','Nifty','Spiffy','Tubular','Dingus','すごい','Caliente','Awesome','Hype','Supa','Super','Mega','Totally','Massive','Hella']
+repoNameSuffixArr = ['Radness', 'Dopeness', 'Gnar','Sweetness','Electric','Ledgend','Hottness','Coolness','Niftyness','Spiffyness','Tubularness','Dingi','Calienteness','Awesomeness','Hypeness','Soldier','Superness','Meganess','Massiveness','Meggedon']
 pword = prompt("What Is the Theme Of your Project?")
 
 var namer = function(pword){
- dong = repoNamePrefixArr[Math.floor(Math.random()*repoNamePrefixArr.length)]
- ding = repoNameSuffixArr[Math.floor(Math.random()*repoNameSuffixArr.length)]
+ prefix = repoNamePrefixArr[Math.floor(Math.random()*repoNamePrefixArr.length)]
+ suffix = repoNameSuffixArr[Math.floor(Math.random()*repoNameSuffixArr.length)]
 
-    console.log(`${dong} ` + pword + ` ${ding}`)
+    console.log(`${prefix} ` + pword + ` ${suffix}`)
 }
 
 function cap(string) 
@@ -17,5 +17,5 @@ function cap(string)
 
 namer(cap(pword))
 var para = document.createElement("P")
-para.innerText = `${dong} ` + cap(pword) + ` ${ding}`
+para.innerText = `${prefix} ` + cap(pword) + ` ${suffix}`
 document.body.appendChild(para)
