@@ -1,4 +1,4 @@
-repoNamePrefixArr = ['Rad', 'Dope', 'Gnarly','Sweet','Electric','Ledgendary','Hott','Cool','Nifty','Spiffy']
+repoNamePrefixArr = ['Rad', 'Dope', 'Gnarly','Sweet','Electric','Ledgendary','Hott','Cool','Nifty','Spiffy','Tubular']
 repoNameSuffixArr = ['Radness', 'Dopeness', 'Gnar','Sweetness','Electric','Ledgend','Hottness','Coolness','Niftyness','Spiffyness']
 pword = prompt("What Is the Theme Of your Project?")
 
@@ -8,7 +8,14 @@ var namer = function(pword){
 
     console.log(`${dong} ` + pword + ` ${ding}`)
 }
-console.log(namer(pword))
+
+function cap(string) 
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+
+namer(cap(pword))
 var para = document.createElement("P")
-para.innerText = `${dong} ` + pword + ` ${ding}`
+para.innerText = `${dong} ` + cap(pword) + ` ${ding}`
 document.body.appendChild(para)
