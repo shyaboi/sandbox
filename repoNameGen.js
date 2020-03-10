@@ -15,6 +15,7 @@ function cap(string)
 }
 
 
+
 namer(cap(pword))
 var para = document.createElement("P")
 para.innerText = `${prefix} ` + cap(pword) + ` ${suffix}`
