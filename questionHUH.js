@@ -9,6 +9,8 @@ console.log(wrap1());
 console.log(wrap2());
 
 
+// ?
+
 function multi(factor){
     return num =>num*factor;
 }
