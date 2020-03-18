@@ -3,7 +3,7 @@
     transform: scaleX(-1);
   }
 
-  #jiggly {
+  /* #jiggly {
     position: absolute;
     right: 50px;
     /* width: 100px;
@@ -12,15 +12,14 @@
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: 3; */
-  }
-  
+  /*}   
   @keyframes example {
     0%   {left:0px; top:0px;}
     25%  {left:200px; top:0px;}
     50%  {left:200px; top:200px;}
     75%  {left:0px; top:200px;}
     100% {left:0px; top:0px;}
-  }
+  } */
 
   .myButtonR {
     box-shadow:inset 0px 1px 0px 0px #bee2f9;
@@ -98,4 +97,11 @@
     top:1px;
   }
   
-  
+.jigglyA {
+  display: none;
+}
+
+.jiggly {
+  position: absolute;
+  right: 50px;
+}
